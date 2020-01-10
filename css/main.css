@@ -91,3 +91,13 @@ body {
 .first__second {
     text-align: center;
 }
+
+.sidebar__list-item {
+    transition: transform 1s;
+    margin-bottom: 1rem;
+}
+
+.sidebar__list-item:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
