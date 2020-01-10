@@ -1,0 +1,93 @@
+/*
+#00A676 - green
+#F7F9F9 - ghost white
+#E0D0C1 - dust storm
+#A76D60 - blast off bronze
+#601700 - french puce
+*/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #00A676, #40fd8c);
+    min-height: 30rem;
+    position: absolute;
+    top: 11%;
+    left: -1000px;
+    opacity: 0;
+    transition: all 1s;
+    color: #ffffff;
+
+}
+
+.menu {
+    padding: 1rem;
+    background-color: #00A676;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu__title {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.menu__bar {
+    width: 3rem;
+    height: .3rem;
+    background-color: #ffffff;
+    margin-bottom: .5rem;
+}
+
+.menu__bar--bottom {
+    margin-bottom: 0;
+}
+
+.sidebar__list {
+    list-style: none;
+    padding: 1rem;
+}
+
+.first {
+    width: 100%;
+    background-color: #F7F9F9;
+    color: #565353;
+    min-height: 30rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.first__main {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.6rem;
+    padding-top: 25%;
+
+}
+
+.first__second {
+    text-align: center;
+}
