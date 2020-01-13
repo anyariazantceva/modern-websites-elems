@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -37,25 +38,31 @@
 
         </section>
         <section class="page__carousel">
-            <ul class="slider">
-                <li class="slider__item">
-
-                </li>
-                <li class="slider__item">
-
-                </li>
-                <li class="slider__item">
-
-                </li>
-                <li class="slider__item">
-
-                </li>
-                <li class="slider__item">
-
-                </li>
-            </ul>
+            <div class="page__carousel--title">Slider</div>
+            <div class="slider">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <img class="slider__image" src="./img/slider1.jpg" alt="slider1">
+                    </li>
+                    <li class="slider__item">
+                        <img class="slider__image" src="./img/slider2.jpg" alt="slider2">
+                    </li>
+                    <li class="slider__item">
+                        <img class="slider__image" src="./img/slider3.jpg" alt="slider3">
+                    </li>
+                    <li class="slider__item">
+                        <img class="slider__image" src="./img/slider4.jpg" alt="slider4">
+                    </li>
+                    <li class="slider__item">
+                        <img class="slider__image" src="./img/slider5.jpg" alt="slider5">
+                    </li>
+                </ul>
+                <button class="slider_next slider__btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="slider_prev slider__btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            </div>
         </section>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
