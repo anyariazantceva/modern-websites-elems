@@ -108,7 +108,7 @@ body {
     margin-top: 2rem;
 }
 
-.page__carousel--title {
+.page__title {
     font-size: 2.4rem;
     text-transform: uppercase;
     text-align: center;
@@ -165,4 +165,105 @@ body {
 
 .slider_prev {
     left: 2rem;
+}
+
+.accordions {
+    background-color: #41CCA5;
+    padding: 5rem 0;
+}
+
+.accordions__title {
+    color: #F7F9F9;
+}
+
+.hor-accordion {
+    width: 90rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: .5rem;
+
+}
+
+.acc-item {
+    margin-bottom: 1rem;
+}
+
+.acc-item__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    border: 1px solid #f7f7f7;
+    margin-bottom: 1rem;
+}
+
+.acc-item__content {
+    display: none;
+}
+
+.content__visible {
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.active {
+    background-color: #cecece;
+}
+.acc-item__card {
+    border: 1px solid #f7f7f7;
+    padding: 1rem;
+    width: 32%;
+}
+
+.acc-item__head {
+    margin-bottom: 1rem;
+}
+.acc-item__fa-icon {
+    margin-right: .5rem;
+}
+
+.drag-drop__container {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.drag-drop__item {
+    border: 3px salmon solid;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.drag-drop__block {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+
+.hold {
+    /*border: 3px solid #ccc;*/
+}
+
+.hovered {
+    background: #f4f4f4;
+    border: 3px salmon dashed;
+}
+
+.invisible {
+    display: none;
 }
