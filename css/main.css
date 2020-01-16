@@ -33,7 +33,7 @@ body {
     background-image: linear-gradient(to bottom, #00A676, #40fd8c);
     min-height: 30rem;
     position: absolute;
-    top: 4%;
+    top: 2%;
     left: -1000px;
     opacity: 0;
     transition: all 1s;
@@ -254,9 +254,8 @@ body {
 
 }
 
-
 .hold {
-    /*border: 3px solid #ccc;*/
+    border: 3px solid #ccc;
 }
 
 .hovered {
@@ -266,4 +265,45 @@ body {
 
 .invisible {
     display: none;
+}
+
+.accordion-css {
+    width: 90rem;
+    display: flex;
+    margin: 20px auto;
+}
+
+.accordio__item {
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+    transition: all 2s;
+    position: relative;
+}
+
+.accordio__left {
+    background-color: cornflowerblue;
+    width: 50px;
+    transition: width 2s;
+    border: 2px solid black;
+}
+
+.accordio__right {
+    background-color: mediumseagreen;
+    width: 180px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transition: all 2s;
+
+}
+
+.accordio__item:hover .accordio__right{
+    opacity: 1;
+    left: 50px;
+
+}
+
+.accordio__item:hover .accordio__left {
+    width: 180px;
 }
