@@ -16,6 +16,8 @@ function showSidebar () {
 
 showSidebar();
 
+// Accordion
+
 function toggleContent () {
     let titles = document.querySelectorAll('.acc-item__title');
     titles.forEach((title) => {
@@ -31,8 +33,9 @@ function toggleContent () {
 
 toggleContent();
 
-const block = document.querySelector('.drag-drop__block');
+// Drag and Drop functionality
 
+const block = document.querySelector('.drag-drop__block');
 const columns = document.querySelectorAll('.drag-drop__item ');
 
 // Fill listeners
@@ -75,4 +78,26 @@ function dragDrop () {
     console.log('drop');
     this.className = 'drag-drop__item';
     this.append(block);
+}
+
+// Modals
+let modal = document.getElementById('modalOne');
+let modalBtn = document.getElementById('modalShow');
+let closeBtn = document.querySelector('.closeBtn');
+
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', clickOutside);
+
+function openModal () {
+    modal.style.display = 'block';
+}
+
+function closeModal () {
+    modal.style.display = 'none';
+}
+
+function clickOutside (e) {
+    if(e.target == modal)
+    modal.style.display = 'none'
 }

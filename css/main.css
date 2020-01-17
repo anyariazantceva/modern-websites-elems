@@ -174,6 +174,10 @@ body {
 .accordions {
     background-color: #5bdab6;
     padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .accordions__title {
@@ -191,6 +195,7 @@ body {
 
 .acc-item {
     margin-bottom: 1rem;
+
 }
 
 .acc-item__title {
@@ -205,6 +210,8 @@ body {
 }
 
 .acc-item__content {
+    animation-name: showAcc;
+    animation-duration: 2s;
     display: none;
 }
 
@@ -275,43 +282,130 @@ body {
     display: none;
 }
 
+
 .accordion-css {
-    width: 90rem;
     display: flex;
     margin: 20px auto;
 }
 
 .accordio__item {
     display: flex;
-    height: 150px;
+    height: 160px;
     overflow: hidden;
-    transition: all 2s;
+    transition: all 1s;
     position: relative;
 }
 
 .accordio__left {
-    background-color: cornflowerblue;
-    width: 50px;
-    transition: width 2s;
-    border: 2px solid black;
+    background-color: #0e1f3e;
+    width: 60px;
+    transition: width 1s;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .accordio__right {
-    background-color: mediumseagreen;
-    width: 180px;
+    background-color: #0e1f3e;
+    width: 350px;
     opacity: 0;
     position: absolute;
     left: 0;
-    transition: all 2s;
+    transition: all 1s;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.4rem;
 
 }
 
-.accordio__item:hover .accordio__right{
+.accordio__item:hover .accordio__right {
     opacity: 1;
-    left: 50px;
+    left: 0;
 
 }
 
 .accordio__item:hover .accordio__left {
-    width: 180px;
+    width: 350px;
+}
+
+.modal_btn {
+    background-color: midnightblue;
+    padding: 1rem;
+    font-family: inherit;
+    border: none;
+    color: #f7f7f7;
+    outline: none;
+}
+
+.modal_btn:hover {
+    background-color: #143B70;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2.4rem;
+    color: #ccc;
+
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+.modals {
+    height: 300px;
+}
+
+.page__footer {
+    background-color: #00A676;
+    padding: 3rem 1rem;
+    color: #f7f7f7;
+}
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showAcc {
+    from {
+        opacity: 0;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        display: block;
+    }
 }
