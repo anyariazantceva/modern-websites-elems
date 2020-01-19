@@ -82,10 +82,14 @@ function dragDrop () {
 
 // Modals
 let modal = document.getElementById('modalOne');
-let modalBtn = document.getElementById('modalShow');
+let modalButtons = document.querySelectorAll('.modal_btn');
+console.log(modalButtons);
 let closeBtn = document.querySelector('.closeBtn');
 
-modalBtn.addEventListener('click', openModal);
+modalButtons.forEach((btn) => {
+    btn.addEventListener('click', openModal);
+});
+
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', clickOutside);
 

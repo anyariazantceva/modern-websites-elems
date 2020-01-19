@@ -33,8 +33,8 @@ body {
     background-image: linear-gradient(to bottom, #00A676, #40fd8c);
     min-height: 30rem;
     position: absolute;
-    top: 2%;
-    left: -1000px;
+    top: 1.5%;
+    left: -100rem;
     opacity: 0;
     transition: all 1s;
     color: #ffffff;
@@ -123,9 +123,9 @@ body {
     position: relative;
     overflow: hidden;
     margin: 2rem auto 3rem;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
+    -webkit-box-shadow: 0 1rem .6rem -.6rem #777;
+    -moz-box-shadow: 0 1rem .6rem -.6rem #777;
+    box-shadow: 0 1rem .6rem -.6rem #777;
 }
 
 .slider__list {
@@ -172,7 +172,7 @@ body {
 }
 
 .accordions {
-    background-color: #5bdab6;
+    background-color: #56366f;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -187,14 +187,9 @@ body {
 .hor-accordion {
     width: 80rem;
     margin: 0 auto;
-    background-color: #5bdab6;
-    padding: 2rem;
+    background-color: #0e1f3e;
+    padding: 1rem;
     border-radius: .5rem;
-
-}
-
-.acc-item {
-    margin-bottom: 1rem;
 
 }
 
@@ -203,10 +198,16 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
-    border: 2px solid #f7f7f7;
-    margin-bottom: 1rem;
     color: #f7f7f7;
     font-weight: bold;
+}
+
+.acc-item__info {
+    width: 70%;
+}
+
+.acc-item__icon {
+    width: 10%;
 }
 
 .acc-item__content {
@@ -218,11 +219,12 @@ body {
 .content__visible {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 
 }
 
 .active {
-    background-color: #42af90;
+    background-color: #283854;
 }
 .acc-item__card {
     border: 2px solid #f7f7f7;
@@ -240,57 +242,14 @@ body {
     margin-right: .5rem;
 }
 
-.drag-drop__container {
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-}
-
-.drag-drop__item {
-    border: 3px salmon solid;
-    background-color: blue;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.drag-drop__block {
-    background-color: greenyellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100px;
-    width: 100px;
-    cursor: pointer;
-
-}
-
-.hold {
-    border: 3px solid #ccc;
-}
-
-.hovered {
-    background: #f4f4f4;
-    border: 3px salmon dashed;
-}
-
-.invisible {
-    display: none;
-}
-
-
 .accordion-css {
     display: flex;
-    margin: 20px auto;
+    margin: 2rem auto;
 }
 
 .accordio__item {
     display: flex;
-    height: 160px;
+    height: 16rem;
     overflow: hidden;
     transition: all 1s;
     position: relative;
@@ -298,7 +257,7 @@ body {
 
 .accordio__left {
     background-color: #0e1f3e;
-    width: 60px;
+    width: 6rem;
     transition: width 1s;
     color: #fff;
     display: flex;
@@ -309,13 +268,13 @@ body {
 
 .accordio__right {
     background-color: #0e1f3e;
-    width: 350px;
+    width: 35rem;
     opacity: 0;
     position: absolute;
     left: 0;
     transition: all 1s;
     color: #fff;
-    padding: 1rem;
+    padding: 3rem 1rem;
     font-size: 1.4rem;
 
 }
@@ -327,20 +286,72 @@ body {
 }
 
 .accordio__item:hover .accordio__left {
-    width: 350px;
+    width: 35rem;
+}
+
+.drag-drop {
+    background-color: #fdd737;
+    padding: 5rem 0;
+}
+.drag-drop__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    padding: 0 3rem;
+}
+
+.drag-drop__item {
+    background-color: #fffff9;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .5rem .5rem 1rem 0 rgba(0,0,0,0.3);
+}
+
+.drag-drop__title {
+    color: #F7F9F9;
+}
+.drag-drop__block {
+    background-color: #00A676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    cursor: pointer;
+    color: #f7f7f7;
+
+}
+
+.hold {
+    border: 3px solid #ccc;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border: 3px #00A676 dashed;
+}
+
+.invisible {
+    display: none;
 }
 
 .modal_btn {
-    background-color: midnightblue;
+    background-color: #00A676;
     padding: 1rem;
     font-family: inherit;
     border: none;
     color: #f7f7f7;
     outline: none;
+    transition: all 1s;
 }
 
 .modal_btn:hover {
-    background-color: #143B70;
+    background-color: #00805b;
 }
 
 .modal {
@@ -358,9 +369,9 @@ body {
 .modal-content {
     position: relative;
     background-color: #f4f4f4;
-    margin: 20% auto;
-    padding: 20px;
-    width: 70%;
+    margin: 10% auto;
+    padding: 10rem 2rem;
+    width: 50%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalopen;
     animation-duration: 1s;
@@ -368,8 +379,8 @@ body {
 
 .closeBtn {
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: .5rem;
+    right: 1rem;
     font-size: 2.4rem;
     color: #ccc;
 
@@ -382,7 +393,15 @@ body {
 }
 
 .modals {
-    height: 300px;
+    height: 30rem;
+    padding-top: 2rem;
+    background-color: #F7F9F9;
+}
+
+.modals__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
 
 .page__footer {
