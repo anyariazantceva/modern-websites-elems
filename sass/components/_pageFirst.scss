@@ -1,0 +1,24 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.first {
+  width: 100%;
+  background-color: $color-light-grey;
+  color: $color-text-primary;
+  min-height: 30rem;
+  padding: 1rem;
+  @include flex(center);
+
+  &__main {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.6rem;
+    padding-top: 25%;
+
+  }
+  &__second {
+    text-align: center;
+    padding-bottom: 25%;
+  }
+}

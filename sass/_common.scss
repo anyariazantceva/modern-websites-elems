@@ -1,0 +1,32 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 1.6rem;
+  color: $color-text-primary;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+
+.page__title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}

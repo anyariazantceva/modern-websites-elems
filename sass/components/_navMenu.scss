@@ -1,0 +1,47 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.sidebar {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #00A676, #40fd8c);
+  min-height: 30rem;
+  @include positioning(absolute, 1.5%, -100rem);
+  opacity: 0;
+  transition: all 1s;
+  color: $color-white;
+
+  &__list {
+    list-style: none;
+    padding: 1rem;
+  }
+
+  &__list-item {
+    transition: transform 1s;
+    margin-bottom: 1rem;
+    &:hover {
+      transform: translateX(1rem);
+      cursor: pointer;
+    }
+  }
+
+}
+
+.menu {
+  padding: 1rem;
+  background-color: $color-green-menu;
+  @include flex(space-between);
+  &__title {
+    color: $color-white;
+    font-weight: 700;
+  }
+
+  &__bar {
+    width: 3rem;
+    height: .3rem;
+    background-color: $color-white;
+    margin-bottom: .5rem;
+    &__--bottom {
+      margin-bottom: 0;
+    }
+  }
+}

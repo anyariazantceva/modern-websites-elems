@@ -1,0 +1,23 @@
+@import '_variables.scss';
+
+@mixin positioning($type, $top, $left) {
+  position: $type;
+  top: $top;
+  left: $left;
+}
+
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0 1rem .6rem -.6rem #777;
+  -moz-box-shadow: 0 1rem .6rem -.6rem #777;
+  box-shadow: 0 1rem .6rem -.6rem #777;
+}
+
+@mixin setSize($width, $height) {
+  width: $width;
+  height: $height;
+}
