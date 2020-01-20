@@ -1,0 +1,49 @@
+@import '../_variables.scss';
+@import '../_mixins.scss';
+
+.drag-drop {
+  background-color: $color-bright-yellow;
+  padding: 5rem 0;
+  &__container {
+    @include flex(space-between);
+    align-items: center;
+    height: 30rem;
+    padding: 0 3rem;
+  }
+  &__item {
+    background-color: #fffff9;
+    @include setSize(15rem, 15rem);
+    @include flex(center);
+    align-items: center;
+    box-shadow: .5rem .5rem 1rem 0 rgba(0,0,0,0.3);
+  }
+
+  &__title {
+    color: $color-light-grey;
+  }
+
+  &__block {
+    background-color: $color-green-menu;
+    @include flex(center);
+    @include setSize(13rem, 13rem);
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: #f7f7f7;
+
+  }
+
+}
+
+.hold {
+  border: 3px solid #ccc;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border: 3px $color-green-menu dashed;
+}
+
+.invisible {
+  display: none;
+}
