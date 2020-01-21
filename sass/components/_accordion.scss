@@ -13,7 +13,8 @@
 }
 
 .hor-accordion {
-  width: 80rem;
+  width: 100%;
+  max-width: 80rem;
   margin: 0 auto;
   background-color: $color-dark-blue;
   padding: 1rem;
@@ -47,6 +48,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  flex-wrap: wrap;
 
 }
 
@@ -72,6 +74,10 @@
 .accordion-css {
   display: flex;
   margin: 2rem auto;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  max-width: 80rem;
 }
 
 .accordio__item {
@@ -114,4 +120,11 @@
 
 .accordio__item:hover .accordio__left {
   width: 35rem;
+}
+
+
+@media screen and (max-width: 442px) {
+  .acc-item__card {
+    width: 100%;
+  }
 }

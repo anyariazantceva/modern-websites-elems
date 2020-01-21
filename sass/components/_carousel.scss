@@ -22,10 +22,12 @@
     transition: left 1s;
   }
   &__item {
-    @include setSize(80rem, 50rem);
+    //@include setSize(80rem, 50rem);
   }
   &__image {
-    @include setSize(100%, 100%);
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
   }
   &__btn {
     position: absolute;
@@ -49,4 +51,10 @@
 
 .slider_prev {
   left: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+
+  }
 }
