@@ -1,5 +1,5 @@
-@import '../_variables.scss';
-@import '../_mixins.scss';
+@import '../variables';
+@import '../mixins';
 
 
 .page__carousel {
@@ -7,7 +7,9 @@
 }
 
 .slider {
-  @include setSize(80rem, 50rem);
+  width: 100%;
+  max-width: 70rem;
+  max-height: 50rem;
   position: relative;
   overflow: hidden;
   margin: 2rem auto 3rem;
@@ -22,11 +24,12 @@
     transition: left 1s;
   }
   &__item {
-    //@include setSize(80rem, 50rem);
+    max-height: 50rem;
   }
   &__image {
     width: 100%;
-    max-width: 60rem;
+    max-width: 80rem;
+    max-height: 50rem;
     height: auto;
   }
   &__btn {

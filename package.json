@@ -1,0 +1,40 @@
+{
+  "name": "modernFeatures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss css/style.css -w",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "clear": "del-cli dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyariazantceva/modern-websites-elems.git"
+  },
+  "keywords": [],
+  "author": "Anna Riazantseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anyariazantceva/modern-websites-elems/issues"
+  },
+  "homepage": "https://github.com/anyariazantceva/modern-websites-elems#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.4.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

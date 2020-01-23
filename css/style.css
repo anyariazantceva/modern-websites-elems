@@ -155,8 +155,9 @@ body {
   margin-top: 2rem; }
 
 .slider {
-  width: 80rem;
-  height: 50rem;
+  width: 100%;
+  max-width: 70rem;
+  max-height: 50rem;
   position: relative;
   overflow: hidden;
   margin: 2rem auto 3rem;
@@ -171,9 +172,12 @@ body {
     width: 1000rem;
     display: flex;
     transition: left 1s; }
+  .slider__item {
+    max-height: 50rem; }
   .slider__image {
     width: 100%;
-    max-width: 60rem;
+    max-width: 80rem;
+    max-height: 50rem;
     height: auto; }
   .slider__btn {
     position: absolute;
