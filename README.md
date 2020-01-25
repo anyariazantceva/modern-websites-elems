@@ -3,7 +3,7 @@ A responsive webpage with interactive elements such as:
   <li> Animated sidebar</li>
   <li> Slider </li>
   <li> Smoothing scroll </li>
-  <li> Accordeons</li>
+  <li> Accordions</li>
   <li> Drag and drop </li>
   <li> Sticky buttons </li>
   <li> Modal windows </li>
